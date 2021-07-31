@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --dark-blue: hsl(229, 23%, 23%);
+    --grayish-blue: hsl(227, 10%, 46%);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat;
+    background-position: 0% -2000%, 100% 2000%;
+    background-size: 50%, 50%;
+}
+
+
+/* STRUCTURE */
+
+.id-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    background-image: url(/images/bg-pattern-card.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: max-content;
+    border-radius: 10px;
+    box-shadow: 1px 20px 22px -1px rgba(0, 0, 0, 0.185);
+}
+
+.stats {
+    border-top: 1px solid lightgray;
+    padding: 2rem 3rem 2rem 3rem;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--grayish-blue);
+    display: flex;
+}
+
+.count {
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0rem;
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+    font-size: 1.4rem;
+}
+
+.stat-name {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#photos {
+    margin-right: 0.1rem;
+}
+
+
+/* IMAGES */
+
+.photo {
+    border: 6px solid white;
+    border-radius: 50%;
+    margin: 5rem 2rem 0.5rem 2rem;
+}
+
+
+/* TEXT */
+
+.id-card {
+    color: var(--dark-blue);
+    margin-bottom: 5rem;
+}
+
+.age,
+.location,
+.stat-names {
+    color: var(--grayish-blue);
+}
+
+.name-and-age {
+    display: flex;
+    justify-content: center;
+}
+
+.name {
+    font-weight: 700;
+    margin-right: 0.5rem;
+    margin-bottom: 0.7rem;
+}
+
+.location {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+/* FOOTER */
+
+.attribution {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-blue);
+}
