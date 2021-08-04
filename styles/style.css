@@ -2,6 +2,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -16,15 +17,15 @@ body {
     align-items: center;
     justify-content: center;
     margin: auto;
-    min-height: 100vh;
+    height: 100vh;
     overflow: hidden;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
     background-color: var(--dark-cyan);
     background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
-    background-position: 0% -2000%, 100% 2000%;
-    background-size: 50%, 50%;
+    background-position: calc((50vw - 100vh)) -50vh, 50vw 50vh;
+    background-size: auto 100vh;
 }
 
 
@@ -47,19 +48,10 @@ body {
 .stats {
     border-top: 1px solid lightgray;
     padding: 2rem 3rem 2rem 3rem;
-    font-size: 0.7rem;
-    letter-spacing: 2px;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
     color: var(--grayish-blue);
     display: flex;
-}
-
-.count {
-    font-weight: 700;
-    font-size: 18px;
-    letter-spacing: 0rem;
-    color: var(--dark-blue);
-    margin-bottom: 5px;
-    font-size: 1.4rem;
 }
 
 .stat-name {
@@ -113,11 +105,20 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.count {
+    font-weight: 700;
+    letter-spacing: 0rem;
+    color: var(--dark-blue);
+    margin-bottom: 5px;
+    font-size: 1.3rem;
+}
+
 
 /* FOOTER */
 
 .attribution {
     color: white;
+    text-align: center;
 }
 
 a {
