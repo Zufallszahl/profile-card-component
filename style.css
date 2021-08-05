@@ -25,6 +25,7 @@ body {
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-repeat: no-repeat;
     background-position: calc((50vw - 100vh)) -50vh, 50vw 50vh;
+    /* credit for background-position: https://github.com/afrussel/profile-card-component */
     background-size: auto 100vh;
 }
 
